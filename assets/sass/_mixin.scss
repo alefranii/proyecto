@@ -1,0 +1,37 @@
+@mixin margen{
+	margin: 4% auto 6% 6%;
+	width: 86%;
+}
+@mixin tituloh2{
+	text-transform: uppercase;
+	position: relative;
+	font-size: 56px;
+	padding-left: 20%;
+	margin-top: -6%;
+	span{
+		display: inline-block;
+		//padding: 0 35px;
+	}
+}
+
+//fotos
+@mixin span{
+	overflow: hidden;
+	position: absolute;
+	top: 51%;
+	left: 0;
+	right: 0;
+}
+
+//preguntas
+@mixin posicion{
+	position: relative;
+	top: 51%;
+	left: 0;
+	right: 0;
+}
+
+@mixin movile{
+	margin-left: 25%;
+	width: 66%;
+}
