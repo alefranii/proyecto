@@ -164,8 +164,8 @@ header{
 
 .variedades{
 	margin: 46px;
-    padding-bottom: 12%;
-    color: #000;
+	padding-bottom: 12%;
+	color: #000;
 	ul{
 		li{
 			float: left;
@@ -389,7 +389,7 @@ header{
 	padding:20px;
 	background:rgba(255,255,255,0.65);
 	text-align:center;
-  	height:auto;
+	height:auto;
 	width:100%;
 	color:#432A18;/*#FFF*/
 	text-shadow:none;
@@ -437,19 +437,43 @@ header{
 
 
 .info-te{
-	@include margen;
+	margin: 7% auto 11% 6%;
+	width: 90%;
 	margin-bottom: 0;
+	overflow: hidden;
+	color: black;
 	hr{
 		border: 2px solid #000;
 		width: 50px;
 	}
-	ul{
-		margin-bottom: 50px;
-		margin-top: 40px;
-		margin-left: 30px;
+	.text-left{
+		width: 41%;
+		margin-bottom: 17%;
+		margin-left: 7%;
+		ul{
+			margin-bottom: 24%;
+			margin-top: 20%;
+			margin-left: 30px;
+			overflow: hidden;
+		}
+	}
+	.text-right{
+		margin-top: -59%;
+		margin-left: 49%;
+		padding-right: 8%;
+		padding: 2%;
+		width: 44%;
+		.paquete{
+			background-image: url(../img/paquete.png);
+			height: 545px;
+			padding: 11%;
+			margin: initial;
+			margin-top: 5%;
+			margin-bottom: 4%;
+			
+		}
 	}
 }
-
 /*-------seccion footer-------*/
 footer{
 	background: rgb(65, 60, 60);
