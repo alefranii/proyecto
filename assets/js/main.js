@@ -6,6 +6,7 @@ $( document ).ready(function() {
 });
 
 
+
 $("#myCarousel").carousel();
 
 $(".item").click(function(){

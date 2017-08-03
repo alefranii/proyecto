@@ -179,52 +179,59 @@ header{
 
 .galerias{
 	display: block;
+	height: 472px;
+	overflow: hidden;
+	
+
 	.g-0{
-		background-image: url(dist/img/min-video-1-2.jpg);
+		background-image: url(../img/min-video-1-2.jpg);
 		background-size: cover;
-		width: 568px;
+		width: 50%;
+		height: 470px;
 		span{
 			overflow: hidden;
 			position: absolute;
-			left: 0;
-			display: inline-block;
+			right: inherit;
 		}
 	}
 	.g-1{
 		background-image: url(../img/min-video-3.jpg);
 		background-size: cover;
+		width: 25%;
+		height: 250px;
+		margin-top: -473px;
+		margin-left: 50%;
+
 		span{
 			overflow: hidden;
 			position: absolute;
-			left: 0;
+			left: inherit;
 		}
 
 	}
 	.g-2{
 		background-image: url(../img/min-video-5.jpg);
 		background-size: cover;
+		width: 25%;
+		height: 250px;
+		margin-top: -252px;
+		margin-left: 75%;
 		span{
-			width: 50%;
-			margin: auto;
-		}
-		span{
-			overflow: hidden;
 			position: absolute;
-			left: 0;
+			overflow: hidden;
+			left: inherit;
 		}
 	}
 	.g-3{
 		background-image: url(../img/min-video-6.jpg);
+		width: 50%;
+		height: 250px;
+		margin-left: 50%;
 		background-size: cover;
-		top: 325px;
-		position: relative;
-		span{
-			@include span;
-		}
 		span{
 			overflow: hidden;
 			position: absolute;
-			left: 0;
+			left: inherit;
 		}
 	}
 }
