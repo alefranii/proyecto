@@ -179,25 +179,20 @@ header{
 
 .galerias{
 	display: block;
-	.g-galeria{
+	.g-0{
 		background-image: url(dist/img/min-video-1-2.jpg);
 		background-size: cover;
-		//height: $altura;
-		span{
-			@include span;
-		}
+		width: 568px;
 		span{
 			overflow: hidden;
 			position: absolute;
 			left: 0;
+			display: inline-block;
 		}
 	}
 	.g-1{
 		background-image: url(../img/min-video-3.jpg);
 		background-size: cover;
-		span{
-			@include span;
-		}
 		span{
 			overflow: hidden;
 			position: absolute;
@@ -209,7 +204,6 @@ header{
 		background-image: url(../img/min-video-5.jpg);
 		background-size: cover;
 		span{
-			@include span;
 			width: 50%;
 			margin: auto;
 		}
@@ -251,31 +245,90 @@ header{
 	}
 }
 
-.pregunta{
-	color: #000;
+.preguntas{
 	overflow: hidden;
+	
+	.texto1{
+		color: #000;
+		margin-right: 17%;
+		width: 38%;
+		margin-top: 18%;
+		background: #fff;
+		margin-bottom: 11%;
+		h4{
+			text-transform: uppercase;
+			position: relative;
+			font-size: 14px;
+			padding-left: 20%;
+			margin-top: -6%;
+		}
+		p{
+			padding-left: 20%;
+		}
+	}
 	.foto1{	
-		height: 630px;
-		background: rgb(229, 202, 150);
-	}
-	.foto2{
-		background: rgb(100, 211, 113);
-		height: 630px;
-	}
-	.foto3{
-		background: rgb(222, 177, 207);
-		height: 630px;
+		background-image: url(../img/icon-1.jpg);
+		height: 472px;
+		background: #e5ca96;
+		margin: -41% 0 0 45%;
+		padding: 8%;
+
 	}
 	.texto2{
-		height: 630px;
+		color: #000;
+		width: 100%;
+		margin: -21% 0 0px 56%;
+		background: #fff;
+
+		h4{
+			text-transform: uppercase;
+			position: relative;
+			font-size: 14px;
+			padding-left: 20%;
+			margin-top: -6%;
+		}
+		p{
+			padding-left: 20%;
+		}
 	}
-	.texto3{
-		@extend .texto2;
+	.foto2{
+		background-image: url(../img/icon-2.jpg);
+		background: #5FFF74;
+		height: 460px;
+		margin-bottom: -57%;
+		margin-right: 55%;
+		padding: 0%;
 
 	}
+	.foto3{
+		background-image: url(../img/icon-3.jpg);
+		background: #deb1cf;
+		height: 400px;
+		margin: -54.5% 1px 0 45%;
+		padding: 6%;
+	}
+	
+	.texto3{
+		color: #000;
+		margin-right: 10%;
+		width: 28%;
+		margin-top: 88%;
+		background: #fff;
+		margin-bottom: 6px;
+		h4{
+			text-transform: uppercase;
+			position: relative;
+			font-size: 14px;
+			padding-left: 20%;
+			margin-top: -126%;
+		}
+		p{
+			padding-left: 20%;
+		}
+	}
+
 
 }
-
 
 
 .campos{
@@ -290,18 +343,13 @@ header{
 	}
 }
 
-.slider{
-	.carousel-inner > .item > img,
-	.carousel-inner > .item > a > img {
-		width: 70%;
-		margin: auto;
-	}
-	.carousel-inner{
-		img{
-			width: 100%;
-		}
+
+.carousel-inner{
+	img{
+		width: 100%;
 	}
 }
+
 
 .info-te{
 	@include margen;
